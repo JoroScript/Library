@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+body{   
+    height: 100vh;
+    background: linear-gradient(  #e6b980 0%,  #eacda3 100vh );
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+form div{
+    display: flex;
+    align-items: center;
+}
+input,button{
+    margin-bottom: 10px;
+    height: 25px;
+    border-radius: 10px;
+}
+input[type="checkbox"]{
+    height: auto;
+}
+.cards{
+    margin: 0 auto;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    /* border: 3px solid black; */
+    padding: 1em 5em 5em 5em;
+    justify-content: start;
+}
+.card{
+    padding-left: 0.5em;
+    width: 250px;
+    height: 275px;
+    border: 3px solid black;
+}
+/* .delete, .changeRead{
+} */
+button+button{
+    margin-left: 1em;
+}
