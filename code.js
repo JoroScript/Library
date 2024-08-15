@@ -25,10 +25,7 @@ let Books = [
     //     read: false
     // }
 ];
-Book.prototype.ChangeRead = function(){
-  this.read = this.read ? false : true;
 
-}
 function displayLibrary(){ 
   cardsContainer.innerHTML= '';
   Books.forEach(newBook => {
@@ -115,10 +112,27 @@ form.addEventListener('submit',function(event){
     displayLibrary(); 
   this.reset();
 })
-function Book(title,author,pages,language,read){
+// function Book(title,author,pages,language,read){
+//     this.title=title;
+//     this.author=author;
+//     this.pages=pages;
+//     this.language=language;
+//     this.read=read;
+// }
+// Book.prototype.ChangeRead = function(){
+//   this.read = this.read ? false : true;
+
+// }
+class Book{
+  constructor(title,author,pages,language,read){
     this.title=title;
     this.author=author;
     this.pages=pages;
     this.language=language;
     this.read=read;
+  }
+  ChangeRead(){
+    this.read = this.read ? false : true;
+  }
+  
 }
